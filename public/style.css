@@ -1,0 +1,16 @@
+*{
+  /* text-align: center; */
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+}
+section{
+  width: 50%;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding-left: 14%;
+}
+h1,h3,p,h2,h3,form{
+  text-align: center;
+}
