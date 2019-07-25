@@ -1,0 +1,38 @@
+{
+  "name": "decodethis-awordgame",
+  "version": "1.0.0",
+  "description": "Full-stack CRUD Web Gaming App Implementing the Express Node Framework",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joFolta/deCodeThis-aWordGame.git"
+  },
+  "keywords": [
+    "game",
+    "crud",
+    "node",
+    "express",
+    "javascript",
+    "mongodb",
+    "web",
+    "app",
+    "full",
+    "stack"
+  ],
+  "author": "Johann Folta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joFolta/deCodeThis-aWordGame/issues"
+  },
+  "homepage": "https://github.com/joFolta/deCodeThis-aWordGame#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.0-beta2"
+  }
+}
