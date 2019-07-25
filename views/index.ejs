@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Unscramble deCode</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+
+
+
+
+
+    <!-- why no FAVICON???? -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>👩🏿‍💻👩🏼‍💻 Unscramble DeCode 👨🏻‍💻👩🏽‍💻</h1>
+    <h3>A fun way to learn the key terminology on your path to software engineering.</h3>
+
+    <section>
+      <ul class="messages">
+        <!-- LOOP THROUGH ARRAY OF ALL MESSAGES -->
+        <!-- SAME COUNTER/NUMBER for thumbUp and thumbDown  -->
+        <!-- <span><messages[i].thumbUp></span> -->
+        <% for(var i=0; i<messages.length; i++) {%>
+          <li class="message">
+            <span><%= messages[i].name %></span>
+            <span><%= messages[i].msg %></span>
+            <span><i class="far fa-thumbs-up"></i></span>
+            <span><%= messages[i].thumbUp %></span>
+            <span><i class="far fa-thumbs-down"></i></span>
+            <span><%= messages[i].thumbDown %></span>
+            <span><i class="fas fa-ban"></i></span>
+          </li>
+          <% } %>
+        </ul>
+    </section>
+    <p>Vote on other answers</p>
+    <!-- Question -->
+    <h2></h2>
+    <h3>Log your name and enter the unscrambled word.</h3>
+    <!-- forms are POSTS/CREATE -->
+    <form action="/messages" method="POST">
+      <input type="text" placeholder="name" name="name">
+      <input type="text" placeholder="answer" name="msg">
+      <button type="submit">Submit</button>
+      <button id="reset" type="button" name="button">Skip Word</button>
+    </form>
+
+    <script src="knuthShuffle.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
