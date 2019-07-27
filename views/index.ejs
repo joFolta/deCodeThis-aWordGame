@@ -18,10 +18,13 @@
     <h3>A fun way to learn the key terminology on your path to software engineering.</h3>
 
     <section>
-      <ul class="messages">
+      <!-- <ol class> names do not matter for GET request-->
+      <ol class="messages">
         <!-- LOOP THROUGH ARRAY OF ALL MESSAGES -->
         <!-- SAME COUNTER/NUMBER for thumbUp and thumbDown  -->
         <!-- <span><messages[i].thumbUp></span> -->
+
+        <!-- <li class> names do not matter for GET request-->
         <% for(var i=0; i<messages.length; i++) {%>
           <li class="message">
             <span><%= messages[i].name %></span>
@@ -33,9 +36,9 @@
             <span><i class="fas fa-ban"></i></span>
           </li>
           <% } %>
-        </ul>
+        </ol>
     </section>
-    <p>Vote on other answers</p>
+    <p>Save your answers</p>
     <!-- Question -->
     <h2></h2>
     <h3>Log your name and enter the unscrambled word.</h3>
