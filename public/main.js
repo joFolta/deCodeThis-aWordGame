@@ -38,7 +38,7 @@ document.querySelector("#reset").onclick = () =>{
 var thumbUp = document.getElementsByClassName("fa-thumbs-up");
 var thumbDown = document.getElementsByClassName("fa-thumbs-down");
 var trash = document.getElementsByClassName("fas fa-ban");
-
+console.log(trash)
 //THUMBS UP
 // Array.from(arrayName), new ES6 syntax
 // instead could use,
