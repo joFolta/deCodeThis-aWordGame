@@ -1,16 +1,25 @@
 *{
   /* text-align: center; */
   box-sizing: border-box;
+  color: white;
+}
+body{
+  background-image: url(bckgnd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 ul{
   list-style-type: none;
 }
 section{
   width: 50%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0 auto;
   padding-left: 14%;
 }
 h1,h3,p,h2,h3,form{
   text-align: center;
+}
+button{
+  color: black;
 }
